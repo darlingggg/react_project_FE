@@ -1,0 +1,42 @@
+.container {
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 5px;
+  background: rgba($color: #ffffff, $alpha: 0.68);
+
+  &:hover {
+    box-shadow: 0 4px 10px #e8e8e8;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  .left {
+    a {
+      display: flex;
+      gap: .5rem;
+    }
+  }
+  .right {
+    display: flex;
+    gap: .5rem;
+    font-size: 12px;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  .left {
+    display: flex;
+    gap: 1rem;
+  }
+  .right{
+    display: flex;
+    gap: .7rem;
+    button {
+      color: #999;
+    }
+  }
+}

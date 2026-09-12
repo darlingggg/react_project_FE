@@ -1,0 +1,19 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 64px - 71px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to right,#4facfe,#00f2fe, #4facfe);
+  background-size: 200% auto;
+  animation: slip 5s linear infinite;
+}
+@keyframes slip {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}

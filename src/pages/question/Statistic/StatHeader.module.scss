@@ -1,0 +1,32 @@
+.header-wrapper {
+  background-color: white;
+  border-bottom:1px solid #e8e8e8;
+  padding: 12px 0;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 24px;
+  .left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    h1 {
+      font-size: 18px;
+      margin: 0;
+      line-height: 1;
+    }
+  }
+  .main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+}

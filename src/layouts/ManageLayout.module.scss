@@ -1,0 +1,18 @@
+.container {
+  position: relative;
+  padding: 24px 0;
+  width: 100vw;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  // height: calc(100vh - 64px);
+  // overflow-y: hidden;
+  z-index: 1;
+}
+.left {
+  width:120px;
+}
+.right { 
+  flex: 1;
+  margin-left: 60px;
+}

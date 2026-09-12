@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 1rem; 
+  }
+  h1 {
+    font-size: 1.2rem;
+    color: #f7f7f7;
+  }
+}
