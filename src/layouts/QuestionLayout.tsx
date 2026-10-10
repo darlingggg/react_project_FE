@@ -8,7 +8,7 @@ const QuestionLayout: FC = () => {
   const { loading } = useLoadUserData()
   useNavPage(loading)
   return (
-    <div style={{ height: '100dvh' }}>
+    <div style={{ height: 'calc(100dvh - var(--desktop-titlebar-height))' }}>
       <div style={{ height: '100%' }}>{!loading ? <Outlet /> : <Spin />}</div>
     </div>
   )

@@ -3,3 +3,96 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --desktop-titlebar-height: 0px;
+}
+
+body:has(.desktop-titlebar) {
+  --desktop-titlebar-height: 40px;
+  padding-top: var(--desktop-titlebar-height);
+}
+
+.desktop-titlebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--desktop-titlebar-height);
+  background: rgba(0, 21, 41, 0.8);
+  backdrop-filter: blur(50px);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.desktop-titlebar-drag {
+  position: absolute;
+  top: 0;
+  left: env(titlebar-area-x, 0px);
+  width: env(titlebar-area-width, calc(100% - 138px));
+  height: 100%;
+  pointer-events: auto;
+  -webkit-app-region: drag;
+  app-region: drag;
+}
+
+.desktop-menu {
+  position: absolute;
+  top: 0;
+  left: 12px;
+  height: 40px;
+  color: #fff;
+  pointer-events: auto;
+  -webkit-app-region: no-drag;
+  app-region: no-drag;
+}
+
+.desktop-menu summary {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 12px;
+  cursor: pointer;
+  user-select: none;
+  list-style: none;
+}
+
+.desktop-menu summary::-webkit-details-marker {
+  display: none;
+}
+
+.desktop-menu summary:hover,
+.desktop-menu[open] summary {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.desktop-menu-list {
+  position: absolute;
+  top: 44px;
+  left: 0;
+  min-width: 152px;
+  padding: 4px;
+  background: #fff;
+  color: #17202b;
+  border: 1px solid #d9dfe5;
+  border-radius: 4px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.desktop-menu-list button {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  border: 0;
+  border-radius: 3px;
+  background: transparent;
+  color: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.desktop-menu-list button:hover,
+.desktop-menu-list button:focus-visible {
+  background: #edf3f8;
+  outline: none;
+}

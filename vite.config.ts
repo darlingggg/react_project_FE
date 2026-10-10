@@ -4,6 +4,7 @@ import { visualizer } from 'rollup-plugin-visualizer'
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './', // 设置基础路径为相对路径
   plugins: [
     react(),
     visualizer({

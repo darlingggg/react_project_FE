@@ -25,6 +25,6 @@ export const setProps: Story = {
       { value: 'item2', text: '选项2' },
       { value: 'item3', text: '选项3' },
     ],
-    value: 'item2'
+    value: 'item2',
   },
 }

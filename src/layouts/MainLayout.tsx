@@ -12,7 +12,15 @@ const MainLayout: FC = () => {
   const { loading } = useLoadUserData()
   useNavPage(loading)
   const loadingElem = (
-    <div style={{ width: '100%', height: 'calc(100vh - 64px - 71px)', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+    <div
+      style={{
+        width: '100%',
+        height: 'calc(100vh - 64px - 71px - var(--desktop-titlebar-height))',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
       <Spin />
     </div>
   )

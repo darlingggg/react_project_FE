@@ -1,6 +1,6 @@
 .container {
   width: 100%;
-  height: calc(100vh - 64px - 71px);
+  height: calc(100vh - 64px - 71px - var(--desktop-titlebar-height));
   display: flex;
   flex-direction: column;
   justify-content: center;

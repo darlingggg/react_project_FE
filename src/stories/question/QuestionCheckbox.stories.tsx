@@ -21,9 +21,9 @@ export const setProps: Story = {
     title: '单选组件',
     isVertical: true,
     list: [
-      { value: 'item1', text: 'first_1',checked: true },
-      { value: 'item2', text: 'second_2',checked: false },
-      { value: 'item3', text: 'third_3',checked: true },
+      { value: 'item1', text: 'first_1', checked: true },
+      { value: 'item2', text: 'second_2', checked: false },
+      { value: 'item3', text: 'third_3', checked: true },
     ],
   },
 }

@@ -22,6 +22,7 @@ const Home: FC = () => {
           type="primary"
           size="large"
           onClick={() => {
+            window.desktop?.notice('这是一个通知消息')
             if (!getToken()) {
               message.warning('跳转页面需要登录')
               setTimeout(() => {
