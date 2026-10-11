@@ -19,8 +19,8 @@ body:has(.desktop-titlebar) {
   left: 0;
   width: 100%;
   height: var(--desktop-titlebar-height);
-  background: rgba(0, 21, 41, 0.8);
-  backdrop-filter: blur(50px);
+  background: rgba(0, 21, 41, 0.28);
+  backdrop-filter: blur(24px) saturate(1.3);
   pointer-events: none;
   z-index: 1000;
 }

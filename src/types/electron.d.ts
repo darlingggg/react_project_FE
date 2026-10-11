@@ -6,6 +6,7 @@ declare global {
       notice: (message: string) => void
       minimizeWindow: () => void
       toggleDevTools: () => void
+      exportCSV: (data: string[][]) => Promise<boolean>
     }
   }
 }
